@@ -9,18 +9,18 @@ jobs:
     name: Check PR title format
     runs-on: ubunutu-slim
     permissions:
-      pull-reqeusts: read
+      pull-requests: read
     
     steps:
-        uses: amann/action-sematic-pull-request@v6
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          types: |
-            feat
-            fix
-            chore
-            docs
-            test
-            refactor
-          requireScope: true
+        - uses: amann/action-sematic-pull-request@v6
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          with:
+            types: |
+              feat
+              fix
+              chore
+              docs
+              test
+              refactor
+            requireScope: true
