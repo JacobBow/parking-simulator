@@ -7,7 +7,7 @@ on:
 jobs:
   check-pr-title:
     name: Check PR title format
-    runs-on: ubunutu-slim
+    runs-on: ubuntu-slim
     permissions:
       pull-requests: read
     
